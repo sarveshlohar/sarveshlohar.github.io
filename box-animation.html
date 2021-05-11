@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transition-duration: 10s;
+  
+  float:left; 
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:1250px; top:0px;}
+  50%  {background-color:blue; left:1250px; top:0px;}
+  75%  {background-color:green; left:1250px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: #fab6b6;
+  
+  animation-name: example1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  float:right; 
+}
+
+@keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:rgb(233, 162, 114); left:-1250px; top:0px;}
+  50%  {background-color:rgb(247, 89, 89); left:-1250px; top:0px;}
+  75%  {background-color:rgb(207, 46, 46); left:-1250px; top:0px;}
+  100% {background-color:rgb(102, 35, 35); left:0px; top:0px;}
+}
+
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Sarvesh Lohar</p>
+
+<div></div>
+<div class="div2"></div>
+
+</body>
+</html>
